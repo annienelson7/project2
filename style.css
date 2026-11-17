@@ -1,1 +1,38 @@
 
+/* Navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Make navigation horizontal */
+ul li {
+    float: left;
+}
+
+/* Navigation links */
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Hover color for inactive links */
+ul li a:hover:not(.active) {
+    background-color: #555;
+}
+
+/* Active page color */
+ul li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
